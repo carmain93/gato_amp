@@ -12,7 +12,7 @@ class Controles extends StatefulWidget {
 
 class _ControlesState extends State<Controles> {
   estados inicial=estados.cruz;
-   int contador=0;
+
 
   @override
   Widget build(BuildContext context) {
@@ -53,11 +53,13 @@ class _ControlesState extends State<Controles> {
           ],
           ),
           ),
+          Contador(),
 
 
 
         ],
       ),
+
     );
   }
 

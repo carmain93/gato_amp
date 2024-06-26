@@ -6,3 +6,4 @@ Map<estados,bool> resultados={estados.cruz: false, estados.circulo: false};
 int puntosCruz = 0;
 int puntosCirculo = 0;
 int empate=0;
+int contador=0;

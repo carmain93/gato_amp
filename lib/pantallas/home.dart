@@ -26,6 +26,7 @@ class _HomeState extends State<Home> {
           ),
           PopupMenuButton(onSelected: (String result) {
             if (result == 'reiniciar') {
+              dialogoReinicio();
 
             } else if (result == 'salir') {
               dialogoSalir();
@@ -49,18 +50,19 @@ class _HomeState extends State<Home> {
 
         child: Stack(//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
           children: [
-
             Image.asset("imagenes/board.png",),
             Controles(),
           ],
         ),
+
       ),
 
       bottomNavigationBar: BottomAppBar(
+
         child: Row(
+
           children: [
-            Contador(),
-            IconButton(onPressed:()=>{dialogoSalir()} , icon: Icon(Icons.access_time_filled_sharp) ,)
+            IconButton(onPressed:()=>{dialogoSalir()} , icon: Icon(Icons.access_time_filled_sharp) ,),
           ],
         ),
 
@@ -92,5 +94,39 @@ class _HomeState extends State<Home> {
       );
     });
   }
+
+  void dialogoReinicio(){
+    showDialog(context: context, builder:(BuildContext context){
+      return AlertDialog(
+        title: Text("desea continuar y Reiniciar"),
+        content: Text(""),
+        actions: <Widget>[
+          TextButton(
+            child: Text("Cancelar"),
+            onPressed: () {
+              Navigator.of(context).pop();
+
+            },
+          ),
+          TextButton(
+            child: Text("Continuar"),
+            onPressed: () {
+              resetTablero();
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
+    });
+  }
+  void resetTablero() {
+    tablero = List.filled(9, estados.vacio);
+    puntosCirculo=0;
+    puntosCruz=0;
+    contador = 0;
+    resultados = {estados.cruz: false, estados.circulo: false};
+    setState(() {});
+  }
+
 }
 
