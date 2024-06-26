@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
       ),
       body: Center(
 
-        child: Stack(
+        child: Stack(//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
           children: [
 
             Image.asset("imagenes/board.png",),
