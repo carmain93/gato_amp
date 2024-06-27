@@ -19,9 +19,9 @@ class _ContadorState extends State<Contador> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          Text('Cruz: $puntosCruz', style: TextStyle(fontSize: 20)),
-          Text('Empates: $empate', style: TextStyle(fontSize: 20)),
-          Text('Círculo: $puntosCirculo', style: TextStyle(fontSize: 20)),
+          Text('Cruz: $puntosCruz', style: TextStyle(fontSize: 15)),
+          Text('Empates: $empate', style: TextStyle(fontSize: 15)),
+          Text('Círculo: $puntosCirculo', style: TextStyle(fontSize: 15)),
         ],
       ),
     );
