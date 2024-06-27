@@ -32,24 +32,24 @@ class _ControlesState extends State<Controles> {
         children: <Widget>[
 
           Expanded(child: Row(children: <Widget>[
-            Celda(inicial: tablero[0],alto: alto/4,ancho: alto/4 ,press: ()=>press(0),),
-            Celda(inicial: tablero[1],alto: alto/4,ancho: alto/4,press: ()=>press(1),),
-            Celda(inicial: tablero[2],alto: alto/4,ancho: alto/4,press: ()=>press(2),)
+            Celda(inicial: tablero[0],alto: alto/4,ancho: ancho/4 ,press: ()=>press(0),),
+            Celda(inicial: tablero[1],alto: alto/4,ancho: ancho/4,press: ()=>press(1),),
+            Celda(inicial: tablero[2],alto: alto/4,ancho: ancho/4,press: ()=>press(2),)
           ],
 
           ),
           ),
           Expanded(child: Row(children: <Widget>[
-            Celda(inicial: tablero[3],alto: alto/4,ancho: alto/4,press: ()=>press(3),),
-            Celda(inicial: tablero[4],alto: alto/4,ancho: alto/4,press: ()=>press(4),),
-            Celda(inicial: tablero[5],alto: alto/4,ancho: alto/4,press: ()=>press(5),)
+            Celda(inicial: tablero[3],alto: alto/4,ancho: ancho/4,press: ()=>press(3),),
+            Celda(inicial: tablero[4],alto: alto/4,ancho: ancho/4,press: ()=>press(4),),
+            Celda(inicial: tablero[5],alto: alto/4,ancho: ancho/4,press: ()=>press(5),)
           ],
           ),
           ),
           Expanded(child: Row(children: <Widget>[
-            Celda(inicial: tablero[6],alto: alto/4,ancho: alto/4,press: ()=>press(6),),
-            Celda(inicial: tablero[7],alto: alto/4,ancho: alto/4,press: ()=>press(7),),
-            Celda(inicial: tablero[8],alto: alto/4,ancho: alto/4,press: ()=>press(8),)
+            Celda(inicial: tablero[6],alto: alto/4,ancho: ancho/4,press: ()=>press(6),),
+            Celda(inicial: tablero[7],alto: alto/4,ancho: ancho/4,press: ()=>press(7),),
+            Celda(inicial: tablero[8],alto: alto/4,ancho: ancho/4,press: ()=>press(8),)
           ],
           ),
           ),
