@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:gato/config/confi.dart';
+
 class App extends StatelessWidget {
   const App({super.key});
 

@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:gato/config/confi.dart';
-import 'package:gato/widgets/zelda.dart';
+
 
 class Contador extends StatefulWidget {
   const Contador({super.key});

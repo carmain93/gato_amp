@@ -1,8 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:gato/config/confi.dart';
-import 'package:gato/pantallas/puntajes.dart';
-import 'package:gato/widgets/zelda.dart';
+
 class Controles extends StatefulWidget {
   const Controles({super.key});
 

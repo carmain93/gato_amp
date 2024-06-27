@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+
 import 'package:gato/config/confi.dart';
-import 'package:gato/pantallas/puntajes.dart';
+
 
 import 'controles.dart';
 class Home extends StatefulWidget {
@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
 
         child: Stack(//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
           children: [
-            Image.asset("imagenes/board.png",),
+            Image.asset("resources/imagenes/board.png",),
             Controles(),
           ],
         ),

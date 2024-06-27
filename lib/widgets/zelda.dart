@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:gato/config/confi.dart';
 
 class Celda extends StatelessWidget {
@@ -30,7 +29,7 @@ class Celda extends StatelessWidget {
         width: ancho,
         child: FittedBox(
           fit: BoxFit.contain,
-          child: Image.asset("imagenes/o.png"),
+          child: Image.asset("resources/imagenes/o.png"),
         ),
       );
     } else {
@@ -39,7 +38,7 @@ class Celda extends StatelessWidget {
         width: ancho,
         child: FittedBox(
           fit: BoxFit.contain,
-          child: Image.asset("imagenes/x.png"),
+          child: Image.asset("resources/imagenes/x.png"),
         ),
       );
     }

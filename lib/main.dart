@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'pantallas/app.dart';
+import 'package:gato/config/confi.dart';
 
 void main() {
   runApp(const App());
